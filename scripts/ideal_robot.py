@@ -136,7 +136,7 @@ class Map:
         self.landmarks=[] #空のランドマーク列
     
     def append_landmark(self,landmark):
-        landmark.id=len(self.landmarks)+1 #追加するランドマークにidを与える
+        landmark.id=len(self.landmarks) #追加するランドマークにidを与える
         self.landmarks.append(landmark)
         
     def draw(self,ax,elems): #描画（landmarkのdrawを順に呼び出し）
